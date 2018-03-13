@@ -13,12 +13,12 @@
 <div class="container">
  
  
-  <h2>Flask Web Form</h2>
+  <h2>Fill Task</h2>
   <form  action="" method="post" role="form">
     {{ form.csrf }}
     <div class="form-group">
-      <label for="name">Name:</label>
-      <input type="text" class="form-control" id="name" name="name" placeholder="What's your name?">
+      <label for="s3uri">S3 URI:</label>
+      <input type="text" class="form-control" id="s3uri" name="s3uri" placeholder="Path to a TSV of (cid, s3uri) pairs (e.g. s3://walczak/test-tsv/100-urls.tsv)">
     </div>
     <button type="submit" class="btn btn-success">Submit</button>
   </form>
